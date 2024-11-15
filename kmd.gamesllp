@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Unblocker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e0e0e0;
+            text-align: center;
+            padding: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            margin: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unblock Your Favorite Games!</h1>
+    <p>Enter the game URL below:</p>
+    <input type="text" id="gameUrl" placeholder="Enter game URL...">
+    <button onclick="unblockGame()">Unblock Game</button>
+
+    <script>
+        function unblockGame() {
+            const url = document.getElementById('gameUrl').value;
+            window.open(`https://proxy.example.com/${url}`, '_blank');
+        }
+    </script>
+</body>
+</html>
